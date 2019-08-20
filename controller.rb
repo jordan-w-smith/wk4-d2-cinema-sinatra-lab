@@ -11,6 +11,7 @@ get '/films' do
   erb(:films)
 end
 
-# get '/films/:james_bond' do
-#   film = Film.new(params[:james_bond])
-# end
+get '/films/:id' do
+ @films = Film.find(params[:id])
+ erb(:film_detail)
+end
