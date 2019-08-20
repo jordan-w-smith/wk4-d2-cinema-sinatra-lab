@@ -1,0 +1,15 @@
+ul li {
+  list-style-type: none;
+  margin-left: -40px;
+}
+
+body {
+  background-color: green;
+}
+
+.film-list, .film-details {
+  text-align: center;
+  /* width: 30%;
+  margin-left: auto;
+  margin-right: auto; */
+}
