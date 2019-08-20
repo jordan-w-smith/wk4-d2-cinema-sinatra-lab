@@ -1,0 +1,16 @@
+require('sinatra')
+require('sinatra/reloader')
+
+
+require_relative('./models/film')
+
+also_reload('./models/*')
+
+get '/films' do
+  @films = Film.all
+  erb(:films)
+end
+
+# get '/films/:james_bond' do
+#   film = Film.new(params[:james_bond])
+# end
