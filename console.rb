@@ -41,7 +41,7 @@ ticket2.save()
 
 
 
-film3.delete()
+# film3.delete()
 
 # Film.delete_all()
 # Customer.delete_all()
